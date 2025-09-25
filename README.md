@@ -1,5 +1,7 @@
 # Customer-Clustering-Analysis
 Dataset Source: https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis
+
+
 Project Description
 This project analyzes the "Customer Personality Analysis" dataset with 2,240 customer records. The main goals were data cleaning, customer segmentation through clustering (3 clusters), and building a two-page interactive dashboard to visualize key KPIs and behavioral patterns of customer segments.
 
