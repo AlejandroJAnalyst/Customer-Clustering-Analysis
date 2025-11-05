@@ -20,7 +20,7 @@ Page 2 displays KPIs (purchase frequency, deal utilization rate, multichannel cu
 
 Usage
 The repo includes code for data cleaning, clustering, and dashboard creation. The dashboard is in English and supports marketing and sales decision-making based on customer segments.
-
+  _________________________________________________________________________________________________________________________________________________________________
 README (Español)
 Análisis de Personalidad del Cliente - Segmentación y Dashboard
 Descripción del Proyecto
