@@ -1,59 +1,119 @@
+```markdown
 # Customer Segmentation and Analysis Report
 
 ## Process
-A detailed analysis was performed on a dataset of 2,240 customer records. This process included data cleaning, handling missing values, and validating data types to ensure accuracy. K-means clustering was applied, identifying three distinct customer segments. A decision tree model was built to identify the key variables driving the segmentation, highlighting spending on wine, meat, and sweets as primary discriminators. Metrics from the Looker Studio dashboard provided additional insights into demographics, education levels, income, purchasing habits, and engagement for each cluster.
+An extensive analysis was conducted on a dataset of 2,240 customer records to better understand purchasing behaviors, demographic profiles, and engagement levels. The process involved thorough data cleansing, handling of missing values, and validation of data quality. Using K-means clustering, customers were segmented into three distinct groups, each with unique behavioral and demographic characteristics. To deepen the understanding of these segments, a decision tree model was developed, which identified key variables such as spending on wine, meat, and sweets as major drivers of segmentation. Complementary insights were obtained from a Looker Studio dashboard, providing metrics on income, education, purchase frequency, channel usage, and recency to form a holistic view of each cluster.
 
 ## Results
 
-### Cluster 0 – Stable Customers with Moderate Spending
-- **Total customers:** 1,006  
-- **Average income:** $34,582.16  
-- **Average wine spending:** $37.51  
-- **Average recency:** 49.54 days  
-- **Education Levels:** Diverse, including Graduates, PhDs, Masters, 2nd Cycle, and Basic  
-- **Purchase frequency:** 5.67  
-- **Multi-channel usage:** 95%  
-- **Complaint rate:** Low at 1.19  
-- **Campaign response rate:** Moderate at 8.65  
-- **Average monthly web visits:** 6.35  
+### Cluster 0 – Stable, Moderate Spending Customers
+This cluster comprises 1,006 individuals characterized by moderate income (average $34,582.16) and spending (wine expenditure averaging $37.51). Their average recency is 49.54 days, indicating fairly recent engagement. Customers span a wide range of education levels, including graduates, PhDs, masters, second cycle, and basic education, with spending correlating somewhat to education level.
 
-This segment shows stable, moderate consumption and represents an opportunity for loyalty programs and targeted marketing campaigns.
+The purchase frequency is modest at 5.67 transactions per period. These customers predominantly use multiple channels (95%) for their purchases, reflecting a multichannel engagement pattern. The complaint rate is low (1.19), signifying general satisfaction with services or products. Their campaign response rate, around 8.65, shows moderate receptiveness to marketing efforts. Web visits average 6.35 per month.
 
-### Cluster 1 – Premium Customers with High Spending
-- **Total customers:** 673  
-- **Average income:** $74,307.28  
-- **Average wine spending:** $586.37  
-- **Average recency:** 49.96 days  
-- **Education Levels:** Predominantly higher education (Graduates, PhDs, Masters) with total spending over $1,200 in key categories  
-- **Purchase frequency:** 16.25  
-- **Multi-channel usage:** 99%  
-- **Significant web and in-store purchases:** 3,562 and 3,997 respectively  
+This segment represents a stable base with steady consumption patterns. They offer a firm foundation for loyalty programs and targeted marketing efforts designed to deepen engagement and increase purchase frequency over time.
 
-This cluster represents high-value clients with strong engagement, ideal for VIP programs and premium marketing strategies.
+### Cluster 1 – Premium High-Spending Customers
+The premium cluster includes 673 customers with notably high income averaging $74,307.28 and substantial wine spending averaging $586.37. The average recency of 49.96 days reflects active and recent engagement. Education levels are predominantly high, with many holding graduate degrees, PhDs, and master’s degrees. Total spending in key categories exceeds $1,200.
 
-### Cluster 2 – Mid-High Income and Spending Customers
-- **Total customers:** 561  
-- **Average income:** $55,937  
-- **Average spending by product category:** Fish $22.50, Meat $116.37, Wine $435.99, Gold $52.33  
-- **Average recency:** 47.31 days  
-- **Marital Status:** Married 39.9%, Divorced 12.5%, Single 17.3%, Together 26.2%  
-- **Education Levels:** Graduates 257, PhDs 166, Masters 108, 2nd Cycle 27, Basic 2  
-- **Purchase frequency:** 16.25  
-- **Deals utilization rate:** 0.21  
-- **Multi-channel customer rate:** 99%  
-- **Web purchases:** 3,562; Store purchases: 3,997  
+Purchase frequency is markedly higher at 16.25 transactions per period, and multi-channel usage nearly universal at 99%. These customers engage heavily both online (3,562 web purchases) and in physical stores (3,997 purchases). Their behavior indicates deep engagement and high loyalty.
 
-This segment has a solid economic profile with significant spending and diverse demographics, suggesting opportunities for growth-oriented retention initiatives.
+This cluster is critical for business profitability. Marketing strategies should focus on VIP and exclusive programs, personalized experiences, and high-touch communications to maximize lifetime customer value and retention.
 
-The decision tree confirmed that spending on wine, meat, and sweets are the key variables differentiating these clusters, which offers a practical and interpretable way to classify new customers and tailor strategies.
+### Cluster 2 – Mid to High Income and Moderate-High Spending Customers
+This group consists of 561 customers with average income around $55,937. Their spending is significant across categories: fish ($22.50), meat ($116.37), wine ($435.99), and gold ($52.33). The average recency is 47.31 days.
+
+Marital status distribution includes 39.9% married, 26.2% living together, 17.3% single, and 12.5% divorced, suggesting family-oriented purchase motivations. Education levels vary, with graduates (257), PhDs (166), masters (108), second cycle (27), and basic education (2). Their purchase frequency is comparable to Cluster 1 at 16.25 transactions, and deal utilization rate stands at 0.21, indicating moderate use of promotions. Multi-channel engagement is very high at 99%.
+
+They make substantial purchases online and offline (3,562 web purchases, 3,997 store purchases), revealing a balanced shopping behavior across channels. This segment likely includes affluent families and professionals who balance quality, frequency, and channel preference.
+
+The decision tree validated spending on wine, meat, and sweets as the primary variables dividing clusters. This actionable insight enhances segmentation precision and facilitates dynamic strategy deployment.
 
 ## Recommendations
-- Leverage personalized loyalty and exclusive offers for Cluster 1 to maximize retention and client value.  
-- Design campaigns to increase spending and purchase frequency for Cluster 2, aligned with their demographic and behavioral profile.  
-- Maintain engagement with targeted promotions for Cluster 0 to sustain steady consumption.  
-- Implement the decision tree model for rapid classification of new clients and dynamic strategy adjustments.  
-- Regularly update the segmentation model to adapt to changing customer behaviors and market conditions.
+
+### For Cluster 1:
+- Develop and enhance VIP loyalty programs with exclusive rewards, personalized communications, and high-value offers tailored to premium tastes.
+- Invest in experiential marketing and high-engagement touchpoints (events, private sales) to deepen customer affinity.
+- Use data-driven personalization in campaigns for predictive targeting of likely high-value purchases or renewals.
+
+### For Cluster 2:
+- Implement mid-tier loyalty tiers offering value-added benefits that resonate with family and professional lifestyles.
+- Focus promotional efforts on categories with high spend (meat, wine) and family-relevant products.
+- Provide options for bundled deals and multi-channel convenience that encourage frequency and basket size growth.
+- Monitor deal utilization to optimize promotional effectiveness.
+
+### For Cluster 0:
+- Strengthen retention with education-focused personalized content, discounts, and promotions adaptable to varied education levels.
+- Encourage multi-channel engagement by enhancing omnichannel experiences.
+- Use targeted incentives to increase purchase frequency and web engagement.
+
+### Across All Clusters:
+- Apply the decision tree classification tool for quick segmentation of new customers to provide tailored offers in real time.
+- Regularly refresh segmentation models to capture evolving customer behavior, market trends, and seasonality.
+- Leverage insights into demographic factors such as marital status and education in crafting persona-driven marketing strategies.
 
 ## Conclusions
-The combination of K-means clustering and decision tree analysis delivers clear, actionable customer segmentation aligned with precise business objectives. 
-It enables more efficient resource allocation, personalized communication, and optimized profitability per segment. Inclusion of demographic variables such as marital status and education adds further depth to the analysis and strategic planning. Overall, this framework provides a well-grounded roadmap for sustained growth through loyalty enhancement, customer activation, and revenue optimization tailored to customer profiles.
+The integrated use of K-means clustering and decision tree analysis yielded a robust, interpretable customer segmentation framework aligned with clear business imperatives. Each cluster presents opportunities and challenges; strategically addressing these with precision marketing and loyalty programs can optimize resource allocation and profitability.
+
+Incorporating detailed demographic and behavioral data empowers the business to deliver a highly personalized customer experience, maximizing engagement, satisfaction, and lifetime value. This segmentation model acts as a cornerstone for data-driven decision-making, offering a sustainable roadmap for growth through targeted acquisition, activation, and retention initiatives.
+
+______________________________________________________________________________
+
+# Informe de Segmentación y Análisis de Clientes
+
+## Proceso
+Se realizó un análisis exhaustivo sobre un dataset con 2,240 registros de clientes para entender mejor sus comportamientos de compra, perfiles demográficos y niveles de compromiso. El proceso incluyó una limpieza profunda de datos, manejo de valores faltantes y validación de calidad. Se aplicó la segmentación mediante K-means, obteniendo tres grupos distintos con características conductuales y demográficas únicas. Para profundizar en la comprensión, se desarrolló un modelo de árbol de decisión que identificó variables clave como el gasto en vino, carne y productos dulces como los principales impulsores de la segmentación. Se integraron insights complementarios desde el dashboard de Looker Studio, que aportó métricas sobre ingresos, educación, frecuencia de compra, uso de canales y recencia para formar una visión holística de cada cluster.
+
+## Resultados
+
+### Cluster 0 – Clientes Estables y de Gasto Moderado
+Este cluster cuenta con 1,006 clientes con ingresos moderados (promedio $34,582.16) y gasto en vino promedio bajo ($37.51). La recencia promedio es 49.54 días, indicando un compromiso relativamente reciente. Los clientes presentan una amplia variedad educativa, incluyendo graduados, doctores (PhD), másteres, ciclo 2 y básica, con ciertas correlaciones entre nivel educativo y gasto.
+
+La frecuencia de compra es moderada, con 5.67 transacciones por período. Utilizan mayormente múltiples canales (95%), reflejando un patrón de compromiso multicanal. La tasa de quejas es baja (1.19), lo que indica buena satisfacción general. La respuesta a campañas es moderada (8.65). Visitan la web un promedio de 6.35 veces al mes.
+
+Este segmento representa una base estable de consumidores moderados, que ofrecen una base sólida para programas de fidelización y campañas dirigidas para incrementar la frecuencia y el valor de compra.
+
+### Cluster 1 – Clientes Premium y de Alto Gasto
+El cluster premium incluye 673 clientes con ingresos altos promedio $74,307.28 y gasto en vino muy alto promedio $586.37. La recencia promedio es 49.96 días, reflejando compromiso activo y reciente. Los niveles educativos predominantes son altos, con muchos graduados, PhDs y másteres. Los gastos totales en las categorías clave superan los $1,200.
+
+La frecuencia de compra es notablemente alta, con 16.25 transacciones por período, y el uso de canales múltiples es casi total (99%). Los clientes compran intensamente tanto en línea (3,562 compras) como en tiendas físicas (3,997 compras). Su comportamiento denota fuerte compromiso y lealtad.
+
+Este cluster es vital para la rentabilidad del negocio. Las estrategias de marketing deben centrarse en programas VIP, experiencias personalizadas y comunicaciones de alto contacto para maximizar el valor de vida del cliente y su retención.
+
+### Cluster 2 – Clientes con Ingreso y Gasto Medio-Alto
+Está compuesto por 561 clientes con ingresos promedio alrededor de $55,937 y gastos significativos en pescado ($22.50), carne ($116.37), vino ($435.99) y oro ($52.33). La recencia promedio es 47.31 días.
+
+La distribución de estado civil incluye 39.9% casados, 26.2% que viven juntos, 17.3% solteros y 12.5% divorciados, señalando posibles motivaciones familiares en las compras. Los niveles educativos varían, con 257 graduados, 166 PhDs, 108 másteres, 27 ciclo 2 y 2 básica. La frecuencia de compra es comparable al cluster 1 (16.25) y la tasa de uso de ofertas es moderada (0.21). La participación multicanal es muy alta (99%).
+
+Realizan compras significativas tanto en línea como en tienda (3,562 y 3,997 respectivamente), mostrando un comportamiento de compra equilibrado en múltiples canales. Este segmento probablemente incluye familias y profesionales con un balance entre calidad, frecuencia y preferencia de canales.
+
+El árbol de decisión validó que el gasto en vino, carne y dulces es la variable clave que segmenta efectivamente a los clientes.
+
+## Recomendaciones
+
+### Para Cluster 1
+- Desarrollar y fortalecer programas VIP y de fidelización con recompensas exclusivas y comunicaciones personalizadas.  
+- Invertir en marketing experiencial y touchpoints de alto impacto (eventos exclusivos, ventas privadas) para profundizar la afinidad.  
+- Utilizar personalización avanzada en campañas para predicción de compras y renovaciones de alto valor.
+
+### Para Cluster 2
+- Implementar niveles medios de fidelización con beneficios alineados al estilo de vida familiar y profesional.  
+- Orientar promociones a productos de alto gasto (carne, vino) y productos familiares.  
+- Ofrecer paquetes y bundles que impulsen la frecuencia y tamaño de compra.  
+- Optimizar la utilización de ofertas según monitoreo continuo.
+
+### Para Cluster 0
+- Reforzar la retención con contenido educativo personalizado, descuentos y promociones según niveles educativos diversos.  
+- Fomentar la experiencia omnicanal y multi-touchpoint.  
+- Incentivar frecuencia y actividad web con ofertas dirigidas y campañas de reactivación.
+
+### General
+- Implementar el árbol de decisión para segmentación rápida y efectiva de nuevos clientes.  
+- Actualizar el modelo periódicamente para mantener la relevancia según cambios de mercado y comportamiento.  
+- Integrar variables demográficas en estrategias para mejorar enfoque y personalización.
+
+## Conclusiones
+La combinación de clustering K-means y árbol de decisión produce una segmentación sólida, interpretable y alineada con objetivos claros de negocio. Cada cluster genera oportunidades específicas para optimizar recursos, personalizar comunicaciones y maximizar rentabilidad.
+
+La riqueza de datos demográficos y comportamentales permite entregar experiencias altamente personalizadas, mejorando el engagement, satisfacción y valor a largo plazo. Esta segmentación es base estratégica para la toma de decisiones orientada al crecimiento sostenible mediante adquisición, activación y retención de clientes.
+
