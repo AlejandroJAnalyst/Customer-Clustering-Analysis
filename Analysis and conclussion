@@ -1,0 +1,59 @@
+# Customer Segmentation and Analysis Report
+
+## Process
+A detailed analysis was performed on a dataset of 2,240 customer records. This process included data cleaning, handling missing values, and validating data types to ensure accuracy. K-means clustering was applied, identifying three distinct customer segments. A decision tree model was built to identify the key variables driving the segmentation, highlighting spending on wine, meat, and sweets as primary discriminators. Metrics from the Looker Studio dashboard provided additional insights into demographics, education levels, income, purchasing habits, and engagement for each cluster.
+
+## Results
+
+### Cluster 0 – Stable Customers with Moderate Spending
+- **Total customers:** 1,006  
+- **Average income:** $34,582.16  
+- **Average wine spending:** $37.51  
+- **Average recency:** 49.54 days  
+- **Education Levels:** Diverse, including Graduates, PhDs, Masters, 2nd Cycle, and Basic  
+- **Purchase frequency:** 5.67  
+- **Multi-channel usage:** 95%  
+- **Complaint rate:** Low at 1.19  
+- **Campaign response rate:** Moderate at 8.65  
+- **Average monthly web visits:** 6.35  
+
+This segment shows stable, moderate consumption and represents an opportunity for loyalty programs and targeted marketing campaigns.
+
+### Cluster 1 – Premium Customers with High Spending
+- **Total customers:** 673  
+- **Average income:** $74,307.28  
+- **Average wine spending:** $586.37  
+- **Average recency:** 49.96 days  
+- **Education Levels:** Predominantly higher education (Graduates, PhDs, Masters) with total spending over $1,200 in key categories  
+- **Purchase frequency:** 16.25  
+- **Multi-channel usage:** 99%  
+- **Significant web and in-store purchases:** 3,562 and 3,997 respectively  
+
+This cluster represents high-value clients with strong engagement, ideal for VIP programs and premium marketing strategies.
+
+### Cluster 2 – Mid-High Income and Spending Customers
+- **Total customers:** 561  
+- **Average income:** $55,937  
+- **Average spending by product category:** Fish $22.50, Meat $116.37, Wine $435.99, Gold $52.33  
+- **Average recency:** 47.31 days  
+- **Marital Status:** Married 39.9%, Divorced 12.5%, Single 17.3%, Together 26.2%  
+- **Education Levels:** Graduates 257, PhDs 166, Masters 108, 2nd Cycle 27, Basic 2  
+- **Purchase frequency:** 16.25  
+- **Deals utilization rate:** 0.21  
+- **Multi-channel customer rate:** 99%  
+- **Web purchases:** 3,562; Store purchases: 3,997  
+
+This segment has a solid economic profile with significant spending and diverse demographics, suggesting opportunities for growth-oriented retention initiatives.
+
+The decision tree confirmed that spending on wine, meat, and sweets are the key variables differentiating these clusters, which offers a practical and interpretable way to classify new customers and tailor strategies.
+
+## Recommendations
+- Leverage personalized loyalty and exclusive offers for Cluster 1 to maximize retention and client value.  
+- Design campaigns to increase spending and purchase frequency for Cluster 2, aligned with their demographic and behavioral profile.  
+- Maintain engagement with targeted promotions for Cluster 0 to sustain steady consumption.  
+- Implement the decision tree model for rapid classification of new clients and dynamic strategy adjustments.  
+- Regularly update the segmentation model to adapt to changing customer behaviors and market conditions.
+
+## Conclusions
+The combination of K-means clustering and decision tree analysis delivers clear, actionable customer segmentation aligned with precise business objectives. 
+It enables more efficient resource allocation, personalized communication, and optimized profitability per segment. Inclusion of demographic variables such as marital status and education adds further depth to the analysis and strategic planning. Overall, this framework provides a well-grounded roadmap for sustained growth through loyalty enhancement, customer activation, and revenue optimization tailored to customer profiles.
